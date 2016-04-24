@@ -15,14 +15,21 @@ use yii\web\AssetBundle;
  */
 class AppAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
+    //public $basePath = '@webroot';
+    //public $baseUrl = '@web';
+
+    public $sourcePath = '@vendor/twbs/bootstrap/dist';
+
     public $css = [
-        'css/style-1460196467115.css',
+        '/css/theme.css',
+        'css/bootstrap.min.css',
     ];
+
     public $js = [
-        'js/jquery.uniform.min.js'
+        '//www.atlasestateagents.co.uk/javascript/tether.min.js',
+        'js/bootstrap.min.js'
     ];
+
     public $depends = [
         'yii\web\YiiAsset',
         //'yii\bootstrap\BootstrapAsset',
